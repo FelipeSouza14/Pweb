@@ -1,31 +1,43 @@
-const cervejas = ["Guiness", "Desperados", "Becks"]
+const cervejas = ["Guiness", "Desperados", "Becks"];
 
 function transformar(item){
-  for (item of cervejas){
-    const itemTransformado = `
-        <tr><td>${item}</td></tr>`;
-
-    document.getElementById("customers").innerHTML += itemTransformado;
-  }
-
+  return `<tr><td>${item}</td></tr>`;
 }
 
-// function transformar(item){
+function carregarDiv() {
+  const div = document.getElementById("meu amor");
+  const tabelaHtml = `
+    <table id= "customers">
+      <tr>
+        <th>Cervejas</th>
+      </tr>
+      ${cervejas.map(transformar).join("")}
+    </table>`;
+  div.innerHTML = tabelaHtml;
 
-//   return
+  const botaoOrdenacao = document.getElementById("botaoOrdenar");
+  botaoOrdenacao.style.display = "inline";
 
-// }
-
-
-function carregarDiv(){
-  let div = document.getElementById("meu amor")
-  let cervejasHtml = cervejas.map(transformar)
-  div.innerHTML = `${cervejasHtml.join("\n")}`
-
+  const botaoEmbaralhamento = document.getElementById("botaoEmbaralhar");
+  botaoEmbaralhamento.style.display = "inline";
 }
 
+function ordenarCervejas(){
+  cervejas.sort();
+  carregarDiv();
+  
+}
 
+function embaralharCervejas() {
+  cervejas.sort(function(){return 0.3 - Math.random();})
+  carregarDiv()
+}
 
-let botao = document.getElementById("botaoCarregar")
+const botaoCarregamento = document.getElementById("botaoCarregar");
+botaoCarregamento.addEventListener("click", carregarDiv);
 
-botao.addEventListener("click", carregarDiv)
+const botaoOrdenacao = document.getElementById("botaoOrdenar");
+botaoOrdenacao.addEventListener("click", ordenarCervejas);
+
+const botaoEmbaralhamento = document.getElementById("botaoEmbaralhar");
+botaoEmbaralhamento.addEventListener("click", embaralharCervejas);
