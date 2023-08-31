@@ -1,59 +1,78 @@
 #meuamor {
-    width: 200px;
-    height: 100px;
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  
-  #botaoCarregar{
-    padding: 5px;
-    border-radius: 10px;
-    background-color: mediumslateblue;
-    color: white;
-    font-size: medium;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 16px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #customers tr:hover {background-color: #ddd;}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #048eaa;
-    color: white;
-  }
-    
+  width: 200px;
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+#botaoCarregar{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #048eaa;
+  color: white;
+  font-size: medium;
+}
+
+#botaoOrdenar{
+  display: none;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #048eaa;
+  color: white;
+  font-size: medium;
+}
+
+#botaoEmbaralhar{
+  display: none;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #048eaa;
+  color: white;
+  font-size: medium;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #048eaa;
+  color: white;
+}
