@@ -14,7 +14,7 @@ async function carregarCervejas() {
 
       tableTwoDiv.innerHTML = table;
   } catch (error) {
-    tableTwoDiv.innerHTML = "<h1>Ocorreu um erro!</h1>";
+    tableTwoDiv.innerHTML = "<h1>Ops! Ocorreu um erro ao carregar os dados</h1>";
   }
 }
 
@@ -27,7 +27,7 @@ async function carregarUsuarios() {
 
         tableDiv.innerHTML = table;
     } catch (error) {
-      tableDiv.innerHTML = "<h1>Ocorreu um erro!</h1>";
+      tableDiv.innerHTML = "<h1>Ops! Ocorreu um erro ao carregar os dados</h1>";
     }
 }
 
