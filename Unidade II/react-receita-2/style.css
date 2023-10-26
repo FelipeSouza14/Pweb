@@ -1,0 +1,65 @@
+table {
+    border: 1px solid #ddd;
+    margin-bottom: 80px;
+    margin-top: 100px;
+}
+  
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tabela {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#tabela tr:nth-child(even){background-color: #f2f2f2;}
+
+#tabela tr:hover {background-color: #ddd;}
+
+#tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #048eaa;
+  color: white;
+}
+
+
+ .botao{
+  background-color: #048eaa;
+  height: 50px;
+  width: 100px;
+  margin: 5%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+ }
+
+ .botao:hover{
+  filter: brightness(0.8);
+ }
+
+ #navBar{
+  background-color: #048eaabd;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .imagens{
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
