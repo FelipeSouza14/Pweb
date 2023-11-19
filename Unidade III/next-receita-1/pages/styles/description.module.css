@@ -1,0 +1,10 @@
+.descriptionStyle{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 3%;
+    color: white;
+}
