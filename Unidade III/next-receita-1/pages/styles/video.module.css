@@ -1,0 +1,8 @@
+.video{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 60%;
+    margin-left: 40%;
+    width: 50%;
+    height: 50%;
+}
