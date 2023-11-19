@@ -1,0 +1,14 @@
+.homePage{
+    background-color: black;
+}
+
+.leftDiv{
+    max-width: 40%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(0, 73, 181, 0.95);
+}
